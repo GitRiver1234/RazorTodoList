@@ -45,7 +45,7 @@ namespace RazorTodoList.Pages
                 todos = todos.Where(s => s.TodoName.Contains(SearchString));
             }
 
-            // ステータス選択
+            // ステータス選択、Allなら何もしない
             if (!string.IsNullOrEmpty(TodoStates))
             {
                 todos = todos.Where(x => x.States == TodoStates);
