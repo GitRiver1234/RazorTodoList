@@ -1,0 +1,42 @@
+﻿@page
+@model RazorTodoList.Pages.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>ToDoの新規登録</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Todo.TodoName" class="control-label">ToDo名</label>
+                <input asp-for="Todo.TodoName" class="form-control" />
+                <span asp-validation-for="Todo.TodoName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Todo.States" class="control-label">ステータス</label>
+                <input asp-for="Todo.States" class="form-control" />
+                <span asp-validation-for="Todo.States" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Todo.TodoDate" class="control-label">実施日</label>
+                <input asp-for="Todo.TodoDate" class="form-control" />
+                <span asp-validation-for="Todo.TodoDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="作成" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">リストに戻る</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

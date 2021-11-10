@@ -1,0 +1,36 @@
+﻿@page
+@model RazorTodoList.Pages.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>詳細</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            ToDo名
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Todo.TodoName)
+        </dd>
+        <dt class="col-sm-2">
+            ステータス
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Todo.States)
+        </dd>
+        <dt class="col-sm-2">
+            実施日
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Todo.TodoDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Todo.Id" class="btn btn-primary">編集</a> |
+    <a asp-page="./Index">リストに戻る</a>
+</div>

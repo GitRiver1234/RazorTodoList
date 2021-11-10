@@ -1,0 +1,37 @@
+﻿@page
+@model RazorTodoList.Pages.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>削除</h1>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            ToDo名
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Todo.TodoName)
+        </dd>
+        <dt class="col-sm-2">
+            ステータス
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Todo.States)
+        </dd>
+        <dt class="col-sm-2">
+            実施日
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Todo.TodoDate)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Todo.Id" />
+        <input type="submit" value="消去" class="btn btn-danger" /> |
+        <a asp-page="./Index">リストに戻る</a>
+    </form>
+</div>

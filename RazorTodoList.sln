@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorTodoList", "RazorTodoList\RazorTodoList.csproj", "{FB750D64-E5D0-4D75-8F34-FD5A94F90D90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB750D64-E5D0-4D75-8F34-FD5A94F90D90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB750D64-E5D0-4D75-8F34-FD5A94F90D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB750D64-E5D0-4D75-8F34-FD5A94F90D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB750D64-E5D0-4D75-8F34-FD5A94F90D90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02710DC8-887C-43A7-9984-60DDB474C5D5}
+	EndGlobalSection
+EndGlobal
